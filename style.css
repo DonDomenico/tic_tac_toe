@@ -1,0 +1,65 @@
+body {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #323232;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-size: 72px;
+    margin-bottom: 80px;
+}
+
+.table-container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.svg-container {
+    position: absolute;
+}
+
+table {
+    font-size: 48px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .player-icons {
+        margin-bottom: 80px;
+        display: flex;
+        gap: 20px;
+    }
+
+    tbody {
+        text-align: center;
+    }
+
+        td {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(255,255,255,0.3);
+            }
+        }
+
+        /* fügt der mittleren Spalte eine border links und rechts hinzu */
+        td:nth-child(2) {
+            border-left: 5px solid white;
+            border-right: 5px solid white;
+        }
+
+        /* fügt den ersten beiden Zeilen eine border-bottom hinzu */
+        tr:nth-child(-n+2) {
+            border-bottom: 5px solid white;
+        }
